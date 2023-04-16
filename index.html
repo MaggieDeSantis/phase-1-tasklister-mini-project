@@ -12,8 +12,21 @@
     <form id="create-task-form" action="" method="POST">
       <label for="new-task-description">Task description:</label>
       <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
+      <label for=""></label>
+
+      <select name="priority" id="priority">
+        <option value="1">High</option>
+        <option value="2">Med</option>
+        <option value="3">Low</option>
+      </select>
+    
       <input type="submit" value="Create New Task">
     </form>
+
+    <select name="sort-taks" id="sort-tasks">
+      <option value="h-l">High to low</option>
+      <option value="l-h">Low to high</option>
+    </select>
 
     <div id="list">
       <h2>My Todos:</h2>
